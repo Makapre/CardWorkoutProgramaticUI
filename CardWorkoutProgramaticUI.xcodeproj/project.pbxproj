@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		F78F20A326752A260001F023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78F20A226752A260001F023 /* AppDelegate.swift */; };
 		F78F20A526752A260001F023 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78F20A426752A260001F023 /* SceneDelegate.swift */; };
-		F78F20A726752A260001F023 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78F20A626752A260001F023 /* ViewController.swift */; };
-		F78F20AA26752A260001F023 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F78F20A826752A260001F023 /* Main.storyboard */; };
 		F78F20AC26752A270001F023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F78F20AB26752A270001F023 /* Assets.xcassets */; };
 		F78F20AF26752A270001F023 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F78F20AD26752A270001F023 /* LaunchScreen.storyboard */; };
+		F78F20B726752B830001F023 /* CardSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78F20B626752B830001F023 /* CardSelectionVC.swift */; };
+		F78F20B926752CA10001F023 /* CWButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78F20B826752CA10001F023 /* CWButton.swift */; };
+		F78F20BB267532BA0001F023 /* RulesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78F20BA267532BA0001F023 /* RulesVC.swift */; };
+		F78F20BD2675374C0001F023 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78F20BC2675374C0001F023 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F78F209F26752A260001F023 /* CardWorkoutProgramaticUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardWorkoutProgramaticUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F78F20A226752A260001F023 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F78F20A426752A260001F023 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F78F20A626752A260001F023 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F78F20A926752A260001F023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F78F20AB26752A270001F023 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F78F20AE26752A270001F023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F78F20B026752A270001F023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F78F20B626752B830001F023 /* CardSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectionVC.swift; sourceTree = "<group>"; };
+		F78F20B826752CA10001F023 /* CWButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWButton.swift; sourceTree = "<group>"; };
+		F78F20BA267532BA0001F023 /* RulesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesVC.swift; sourceTree = "<group>"; };
+		F78F20BC2675374C0001F023 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = ../../CardWorkout/CardWorkout/Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				F78F20A226752A260001F023 /* AppDelegate.swift */,
 				F78F20A426752A260001F023 /* SceneDelegate.swift */,
-				F78F20A626752A260001F023 /* ViewController.swift */,
-				F78F20A826752A260001F023 /* Main.storyboard */,
 				F78F20AB26752A270001F023 /* Assets.xcassets */,
 				F78F20AD26752A270001F023 /* LaunchScreen.storyboard */,
+				F78F20BC2675374C0001F023 /* Card.swift */,
 				F78F20B026752A270001F023 /* Info.plist */,
+				F78F20B626752B830001F023 /* CardSelectionVC.swift */,
+				F78F20B826752CA10001F023 /* CWButton.swift */,
+				F78F20BA267532BA0001F023 /* RulesVC.swift */,
 			);
 			path = CardWorkoutProgramaticUI;
 			sourceTree = "<group>";
@@ -126,7 +132,6 @@
 			files = (
 				F78F20AF26752A270001F023 /* LaunchScreen.storyboard in Resources */,
 				F78F20AC26752A270001F023 /* Assets.xcassets in Resources */,
-				F78F20AA26752A260001F023 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +142,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F78F20A726752A260001F023 /* ViewController.swift in Sources */,
 				F78F20A326752A260001F023 /* AppDelegate.swift in Sources */,
+				F78F20BD2675374C0001F023 /* Card.swift in Sources */,
+				F78F20BB267532BA0001F023 /* RulesVC.swift in Sources */,
 				F78F20A526752A260001F023 /* SceneDelegate.swift in Sources */,
+				F78F20B726752B830001F023 /* CardSelectionVC.swift in Sources */,
+				F78F20B926752CA10001F023 /* CWButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F78F20A826752A260001F023 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F78F20A926752A260001F023 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F78F20AD26752A270001F023 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
