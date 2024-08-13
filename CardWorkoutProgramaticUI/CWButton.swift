@@ -18,10 +18,15 @@ class CWButton: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
     
-    init(backgroundColor: UIColor, title: String) {
+    init(
+        backgroundColor: UIColor,
+        title: String,
+        padding: UIEdgeInsets = .init(top: 0, left: 0, bottom: 0, right: 0)
+    ) {
         super.init(frame: .zero)
         self.backgroundColor = backgroundColor
         setTitle(title, for: .normal)
+        contentEdgeInsets = padding
         configure()
     }
     
@@ -31,4 +36,13 @@ class CWButton: UIButton {
         setTitleColor(.white, for: .normal)
         translatesAutoresizingMaskIntoConstraints = false
     }
+}
+
+@available(iOS 17, *)
+#Preview {
+    CWButton(
+        backgroundColor: .systemRed,
+        title: "STOP",
+        padding: .init(top: 5, left: 20, bottom: 5, right: 20)
+    )
 }

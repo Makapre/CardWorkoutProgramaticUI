@@ -108,6 +108,11 @@ class CardSelectionVC: UIViewController {
     @objc func presentRulesVC() {
         present(RulesVC(), animated: true)
 //        for navigtation controller
-//        navigationController?.pushViewController(<#T##viewController: UIViewController##UIViewController#>, animated: <#T##Bool#>)
+//        navigationController?.pushViewController(RulesVC(), animated: true)
     }
+}
+
+@available(iOS 17, *)
+#Preview {
+    CardSelectionVC()
 }

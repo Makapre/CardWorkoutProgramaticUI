@@ -80,3 +80,8 @@ class RulesVC: UIViewController {
         ])
     }
 }
+
+@available(iOS 17, *)
+#Preview {
+    RulesVC()
+}
